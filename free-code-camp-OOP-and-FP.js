@@ -306,11 +306,9 @@ Penguin.prototype.fly = function() {
     };
   })();
 
-
-  //FP
+ //FUNCTIONAL PROGRAMMING
   // Function that returns a string representing a cup of green tea
 const prepareTea = () => 'greenTea';
-
 /*
 Given a function (representing the tea type) and number of cups needed, the
 following function returns an array of strings (each representing a cup of
@@ -335,7 +333,6 @@ const prepareGreenTea = () => 'greenTea';
 
 // Function that returns a string representing a cup of black tea
 const prepareBlackTea = () => 'blackTea';
-
 /*
 Given a function (representing the tea type) and number of cups needed, the
 following function returns an array of strings (each representing a cup of
@@ -366,7 +363,7 @@ const Window = function(tabs) {
     this.tabs = tabs; // We keep a record of the array inside the object
   };
   
-  // When you join two windows into one window
+// When you join two windows into one window
   Window.prototype.join = function(otherWindow) {
     this.tabs = this.tabs.concat(otherWindow.tabs);
     return this;
@@ -392,13 +389,11 @@ const Window = function(tabs) {
   
     return this;
    };
-  
   // Let's create three browser windows
   const workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']); // Your mailbox, drive, and other work sites
   const socialWindow = new Window(['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium']); // Social sites
   const videoWindow = new Window(['Netflix', 'YouTube', 'Vimeo', 'Vine']); // Entertainment sites
-  
-  // Now perform the tab opening, closing, and other operations
+   // Now perform the tab opening, closing, and other operations
   const finalTabs = socialWindow
     .tabOpen() // Open a new tab for cat memes
     .join(videoWindow.tabClose(2)) // Close third tab in video window, and join
@@ -407,8 +402,7 @@ const Window = function(tabs) {
 
   // The global variable
 let fixedValue = 4;
-
-// Only change code below this line
+/ Only change code below this line
 function incrementer(value) {
 return value+1;
 
@@ -423,8 +417,7 @@ function add(list,bookName) {
 let newbook = [...list];
   newbook.push(bookName);
   return newbook;
-  
-  // Change code above this line
+  / Change code above this line
 }
 
 // Change code below this line
@@ -449,8 +442,7 @@ function sliceArray(anim, beginSlice, endSlice) {
   
     // Only change code above this line
   }
-  
-  const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+   const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
   sliceArray(inputAnim, 1, 3);
 
   Array.prototype.myFilter = function (callback) {
@@ -588,13 +580,11 @@ const watchList = [
     // Add your code below this line
   
     return cities.slice(0, 3);
-  
-    // Add your code above this line
+   // Add your code above this line
   }
   var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
   nonMutatingSplice(inputCities);
-
-  function nonMutatingConcat(original, attach) {
+ function nonMutatingConcat(original, attach) {
     // Add your code below this line
   
     return original.concat(attach);
